@@ -10,3 +10,6 @@
 (0..100).each do 
   Issue.create(title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph)
 end
+(0..100).each do 
+  User.create(first_name: Faker::Name.male_first_name, last_name: Faker::Name.last_name, date_of_birth: Faker::Date.backward(days: 1400), gender: "male")
+end

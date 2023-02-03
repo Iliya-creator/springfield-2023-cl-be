@@ -4,3 +4,7 @@
   <h2><%= issue.title %></h2>
   <p><%= issue.content %></p>
 <% end %>
+<% @users.each do |user| %> 
+  <h2><%= user.first_name %> <%= user.last_name %></h2>
+  <p><%= user.date_of_birth %> <%= user.gender %></p>
+<% end %>

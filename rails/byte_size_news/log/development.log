@@ -763,3 +763,674 @@ Processing by News::SearchController#search_feed as HTML
 Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 4623)
 
 
+  [1m[36mActiveRecord::SchemaMigration Pluck (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230203030258)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (22.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "date_of_birth" varchar, "gender" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230203030258"]]
+  [1m[36mTRANSACTION (31.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (7.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (9.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (9.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (29.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quia nam rerum laboriosam."], ["content", "Sit odit rem. Natus provident dolor. Illo voluptatem ea."], ["created_at", "2023-02-03 03:24:53.932966"], ["updated_at", "2023-02-03 03:24:53.932966"]]
+  [1m[36mTRANSACTION (39.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Eos ratione ex vitae."], ["content", "In maiores assumenda. Dolor occaecati consectetur. Molestiae ab expedita."], ["created_at", "2023-02-03 03:24:54.016096"], ["updated_at", "2023-02-03 03:24:54.016096"]]
+  [1m[36mTRANSACTION (39.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quia vitae ut recusandae."], ["content", "Tempore dicta accusantium. Iusto consequatur tempora. Repellat in sapiente."], ["created_at", "2023-02-03 03:24:54.091965"], ["updated_at", "2023-02-03 03:24:54.091965"]]
+  [1m[36mTRANSACTION (41.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (29.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Iste possimus blanditiis hic."], ["content", "Quis enim quaerat. Aliquid excepturi iste. Hic ut eius."], ["created_at", "2023-02-03 03:24:54.170316"], ["updated_at", "2023-02-03 03:24:54.170316"]]
+  [1m[36mTRANSACTION (38.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Delectus maiores illum voluptatum."], ["content", "Illo temporibus deleniti. Rerum amet fugit. Rerum quis laboriosam."], ["created_at", "2023-02-03 03:24:54.248211"], ["updated_at", "2023-02-03 03:24:54.248211"]]
+  [1m[36mTRANSACTION (38.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.0ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Qui qui sapiente illo."], ["content", "Aut perferendis eos. Cumque vitae minima. Quam est nulla."], ["created_at", "2023-02-03 03:24:54.322480"], ["updated_at", "2023-02-03 03:24:54.322480"]]
+  [1m[36mTRANSACTION (39.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Et dolores officia ut."], ["content", "Debitis laborum dicta. Veniam similique atque. Velit impedit qui."], ["created_at", "2023-02-03 03:24:54.398432"], ["updated_at", "2023-02-03 03:24:54.398432"]]
+  [1m[36mTRANSACTION (42.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptas culpa sit perferendis."], ["content", "Laudantium adipisci sit. Eos corrupti ipsam. Nemo reiciendis assumenda."], ["created_at", "2023-02-03 03:24:54.475981"], ["updated_at", "2023-02-03 03:24:54.475981"]]
+  [1m[36mTRANSACTION (38.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quisquam libero voluptatum dolor."], ["content", "Similique a nobis. Totam fuga dicta. Impedit quia ipsa."], ["created_at", "2023-02-03 03:24:54.552378"], ["updated_at", "2023-02-03 03:24:54.552378"]]
+  [1m[36mTRANSACTION (40.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Neque consequuntur facilis et."], ["content", "Et distinctio vitae. Modi animi illo. Neque qui aut."], ["created_at", "2023-02-03 03:24:54.628421"], ["updated_at", "2023-02-03 03:24:54.628421"]]
+  [1m[36mTRANSACTION (39.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.1ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aliquid dolores et laboriosam."], ["content", "Ratione quae sapiente. Aut et eum. Rerum quis pariatur."], ["created_at", "2023-02-03 03:24:54.705648"], ["updated_at", "2023-02-03 03:24:54.705648"]]
+  [1m[36mTRANSACTION (39.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Veritatis necessitatibus ullam sequi."], ["content", "Tempora rerum molestias. Velit cupiditate adipisci. Nemo vitae voluptas."], ["created_at", "2023-02-03 03:24:54.780874"], ["updated_at", "2023-02-03 03:24:54.780874"]]
+  [1m[36mTRANSACTION (46.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Odio omnis incidunt praesentium."], ["content", "Cumque alias enim. Qui impedit aut. Dicta temporibus autem."], ["created_at", "2023-02-03 03:24:54.867135"], ["updated_at", "2023-02-03 03:24:54.867135"]]
+  [1m[36mTRANSACTION (40.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Inventore mollitia illum enim."], ["content", "Nisi qui eum. Quas quia quo. Dolores occaecati repellat."], ["created_at", "2023-02-03 03:24:54.948161"], ["updated_at", "2023-02-03 03:24:54.948161"]]
+  [1m[36mTRANSACTION (39.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.6ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Numquam earum cupiditate omnis."], ["content", "Esse officiis corporis. Voluptas sit quis. Fuga quo blanditiis."], ["created_at", "2023-02-03 03:24:55.025150"], ["updated_at", "2023-02-03 03:24:55.025150"]]
+  [1m[36mTRANSACTION (39.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Fugiat ut omnis voluptatibus."], ["content", "Expedita non aut. Voluptates a molestiae. Ipsam numquam minus."], ["created_at", "2023-02-03 03:24:55.099763"], ["updated_at", "2023-02-03 03:24:55.099763"]]
+  [1m[36mTRANSACTION (40.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (27.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Autem labore sit quia."], ["content", "Exercitationem nostrum qui. Aut dolorum maiores. Ut quisquam dolor."], ["created_at", "2023-02-03 03:24:55.175713"], ["updated_at", "2023-02-03 03:24:55.175713"]]
+  [1m[36mTRANSACTION (40.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sapiente veniam quis pariatur."], ["content", "Beatae recusandae maiores. Rerum voluptates qui. Veniam qui voluptates."], ["created_at", "2023-02-03 03:24:55.255142"], ["updated_at", "2023-02-03 03:24:55.255142"]]
+  [1m[36mTRANSACTION (37.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (17.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Dolores ut aliquam temporibus."], ["content", "Laborum numquam a. Dolore quibusdam et. Aut qui ad."], ["created_at", "2023-02-03 03:24:55.330444"], ["updated_at", "2023-02-03 03:24:55.330444"]]
+  [1m[36mTRANSACTION (28.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (18.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Labore quas ut sed."], ["content", "Corrupti quisquam facere. Autem sed impedit. Assumenda ut et."], ["created_at", "2023-02-03 03:24:55.386355"], ["updated_at", "2023-02-03 03:24:55.386355"]]
+  [1m[36mTRANSACTION (31.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (17.0ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Laudantium quos eaque totam."], ["content", "Tempora aut ratione. Modi officia occaecati. Iste non dolore."], ["created_at", "2023-02-03 03:24:55.444797"], ["updated_at", "2023-02-03 03:24:55.444797"]]
+  [1m[36mTRANSACTION (30.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (18.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptatem odio suscipit quasi."], ["content", "Ad et a. Voluptas ut at. Aut illum doloremque."], ["created_at", "2023-02-03 03:24:55.500112"], ["updated_at", "2023-02-03 03:24:55.500112"]]
+  [1m[36mTRANSACTION (37.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.7ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Placeat accusantium aperiam ut."], ["content", "Sint sit facilis. Autem eius voluptas. Cum consectetur ab."], ["created_at", "2023-02-03 03:24:55.564268"], ["updated_at", "2023-02-03 03:24:55.564268"]]
+  [1m[36mTRANSACTION (43.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Non quidem explicabo inventore."], ["content", "Et est autem. Minus optio libero. Dolor similique doloribus."], ["created_at", "2023-02-03 03:24:55.642957"], ["updated_at", "2023-02-03 03:24:55.642957"]]
+  [1m[36mTRANSACTION (41.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Qui quidem ipsum est."], ["content", "Enim temporibus omnis. Quasi deserunt cupiditate. Vel est sunt."], ["created_at", "2023-02-03 03:24:55.720353"], ["updated_at", "2023-02-03 03:24:55.720353"]]
+  [1m[36mTRANSACTION (40.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (24.6ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Et perspiciatis ea quo."], ["content", "Ducimus reiciendis ad. Quas exercitationem sequi. Distinctio rem unde."], ["created_at", "2023-02-03 03:24:55.797451"], ["updated_at", "2023-02-03 03:24:55.797451"]]
+  [1m[36mTRANSACTION (38.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ut est aliquam deserunt."], ["content", "Voluptatum nesciunt aperiam. Saepe fuga non. Aut veniam voluptatem."], ["created_at", "2023-02-03 03:24:55.871588"], ["updated_at", "2023-02-03 03:24:55.871588"]]
+  [1m[36mTRANSACTION (39.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.1ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ipsam et voluptate est."], ["content", "Eveniet nam harum. Ut voluptatem ex. Natus saepe eos."], ["created_at", "2023-02-03 03:24:55.948547"], ["updated_at", "2023-02-03 03:24:55.948547"]]
+  [1m[36mTRANSACTION (39.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (22.0ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "At sunt veniam ut."], ["content", "Voluptatem nostrum ipsam. Quos repellendus quas. Quia repellendus ut."], ["created_at", "2023-02-03 03:24:56.026727"], ["updated_at", "2023-02-03 03:24:56.026727"]]
+  [1m[36mTRANSACTION (34.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (24.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quod esse fugit repudiandae."], ["content", "Necessitatibus eum maiores. Qui placeat saepe. Qui dolorem officia."], ["created_at", "2023-02-03 03:24:56.094231"], ["updated_at", "2023-02-03 03:24:56.094231"]]
+  [1m[36mTRANSACTION (40.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (24.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Et consequuntur aut est."], ["content", "Veritatis doloremque voluptate. Alias magnam laboriosam. Omnis voluptatem vel."], ["created_at", "2023-02-03 03:24:56.172201"], ["updated_at", "2023-02-03 03:24:56.172201"]]
+  [1m[36mTRANSACTION (32.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (18.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quisquam officiis autem velit."], ["content", "Recusandae minus ad. Et quae est. Maiores aut et."], ["created_at", "2023-02-03 03:24:56.242560"], ["updated_at", "2023-02-03 03:24:56.242560"]]
+  [1m[36mTRANSACTION (29.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (17.7ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Eveniet facere sunt cupiditate."], ["content", "Vero qui excepturi. Fugit placeat vel. Sapiente consequatur vitae."], ["created_at", "2023-02-03 03:24:56.299983"], ["updated_at", "2023-02-03 03:24:56.299983"]]
+  [1m[36mTRANSACTION (133.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (17.6ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Saepe inventore ea aliquam."], ["content", "Iure natus est. Nisi et in. Cum blanditiis eveniet."], ["created_at", "2023-02-03 03:24:56.460599"], ["updated_at", "2023-02-03 03:24:56.460599"]]
+  [1m[36mTRANSACTION (43.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (16.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Numquam omnis ea totam."], ["content", "Iste recusandae velit. Inventore sit sed. Praesentium dolore soluta."], ["created_at", "2023-02-03 03:24:56.530379"], ["updated_at", "2023-02-03 03:24:56.530379"]]
+  [1m[36mTRANSACTION (27.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (16.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Nulla provident praesentium a."], ["content", "Et incidunt temporibus. Ut sit temporibus. Cum atque consequatur."], ["created_at", "2023-02-03 03:24:56.584690"], ["updated_at", "2023-02-03 03:24:56.584690"]]
+  [1m[36mTRANSACTION (35.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (19.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ratione molestiae officiis quia."], ["content", "Quod repellat officia. Qui et qui. Quia dolorem eius."], ["created_at", "2023-02-03 03:24:56.671929"], ["updated_at", "2023-02-03 03:24:56.671929"]]
+  [1m[36mTRANSACTION (29.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (16.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Amet et qui eos."], ["content", "Est autem error. Exercitationem molestiae aliquam. Harum assumenda repellendus."], ["created_at", "2023-02-03 03:24:56.730514"], ["updated_at", "2023-02-03 03:24:56.730514"]]
+  [1m[36mTRANSACTION (27.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (22.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Doloremque et molestias animi."], ["content", "Magni in quia. Ullam quisquam nulla. Nisi sit vel."], ["created_at", "2023-02-03 03:24:56.782668"], ["updated_at", "2023-02-03 03:24:56.782668"]]
+  [1m[36mTRANSACTION (27.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (17.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Illum repellendus excepturi id."], ["content", "Sapiente quidem eos. Voluptatem amet deleniti. Neque aliquid facere."], ["created_at", "2023-02-03 03:24:56.842655"], ["updated_at", "2023-02-03 03:24:56.842655"]]
+  [1m[36mTRANSACTION (28.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (24.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Nihil amet consequatur et."], ["content", "Vitae quod in. Voluptatibus optio aut. Necessitatibus harum adipisci."], ["created_at", "2023-02-03 03:24:56.898732"], ["updated_at", "2023-02-03 03:24:56.898732"]]
+  [1m[36mTRANSACTION (29.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (19.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Et totam magni expedita."], ["content", "Porro id nulla. Unde mollitia quo. Cupiditate vel pariatur."], ["created_at", "2023-02-03 03:24:56.979244"], ["updated_at", "2023-02-03 03:24:56.979244"]]
+  [1m[36mTRANSACTION (35.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (21.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sapiente dignissimos possimus non."], ["content", "Quo totam eaque. Itaque qui quis. Consequatur beatae dolor."], ["created_at", "2023-02-03 03:24:57.045759"], ["updated_at", "2023-02-03 03:24:57.045759"]]
+  [1m[36mTRANSACTION (31.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (18.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Nulla provident incidunt quod."], ["content", "Nihil porro est. Mollitia occaecati distinctio. Alias eum ipsam."], ["created_at", "2023-02-03 03:24:57.111191"], ["updated_at", "2023-02-03 03:24:57.111191"]]
+  [1m[36mTRANSACTION (32.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (23.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Minima laudantium molestiae suscipit."], ["content", "Itaque quidem dignissimos. Nostrum iure numquam. Tenetur mollitia facilis."], ["created_at", "2023-02-03 03:24:57.174540"], ["updated_at", "2023-02-03 03:24:57.174540"]]
+  [1m[36mTRANSACTION (42.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (28.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Praesentium in ipsa qui."], ["content", "Voluptatem explicabo facere. Nulla saepe sint. Iusto voluptatum et."], ["created_at", "2023-02-03 03:24:57.253606"], ["updated_at", "2023-02-03 03:24:57.253606"]]
+  [1m[36mTRANSACTION (33.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (19.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Labore nemo nihil et."], ["content", "Fugiat voluptas cupiditate. Velit labore dolorem. Atque quae culpa."], ["created_at", "2023-02-03 03:24:57.330606"], ["updated_at", "2023-02-03 03:24:57.330606"]]
+  [1m[36mTRANSACTION (34.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (22.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Unde illum ullam omnis."], ["content", "Voluptas dolor ullam. Incidunt quo qui. Non doloremque ad."], ["created_at", "2023-02-03 03:24:57.396208"], ["updated_at", "2023-02-03 03:24:57.396208"]]
+  [1m[36mTRANSACTION (35.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (21.7ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Eos ipsum ut qui."], ["content", "Distinctio dicta asperiores. Ea minima ducimus. Quia quas beatae."], ["created_at", "2023-02-03 03:24:57.466519"], ["updated_at", "2023-02-03 03:24:57.466519"]]
+  [1m[36mTRANSACTION (31.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (15.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Qui ea est cupiditate."], ["content", "Atque eos numquam. Et facere maxime. Et exercitationem deleniti."], ["created_at", "2023-02-03 03:24:57.529167"], ["updated_at", "2023-02-03 03:24:57.529167"]]
+  [1m[36mTRANSACTION (51.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (34.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "In nostrum et consequatur."], ["content", "Voluptatibus quasi non. Necessitatibus porro veritatis. Nesciunt perspiciatis cumque."], ["created_at", "2023-02-03 03:24:57.609081"], ["updated_at", "2023-02-03 03:24:57.609081"]]
+  [1m[36mTRANSACTION (38.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (23.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Perferendis expedita fugit aliquam."], ["content", "Quia ut aut. Enim quia inventore. Cumque ut laudantium."], ["created_at", "2023-02-03 03:24:57.695805"], ["updated_at", "2023-02-03 03:24:57.695805"]]
+  [1m[36mTRANSACTION (29.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (18.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sit et saepe rerum."], ["content", "Harum pariatur voluptas. Laboriosam at explicabo. Magnam nihil ut."], ["created_at", "2023-02-03 03:24:57.759879"], ["updated_at", "2023-02-03 03:24:57.759879"]]
+  [1m[36mTRANSACTION (42.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (21.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Tempore vitae reiciendis et."], ["content", "Tempore explicabo magni. Atque facilis fugit. Dolores voluptatem quis."], ["created_at", "2023-02-03 03:24:57.830983"], ["updated_at", "2023-02-03 03:24:57.830983"]]
+  [1m[36mTRANSACTION (36.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Incidunt aspernatur est corrupti."], ["content", "Sed in ipsum. Cum quae repudiandae. Dolores eius rerum."], ["created_at", "2023-02-03 03:24:57.902892"], ["updated_at", "2023-02-03 03:24:57.902892"]]
+  [1m[36mTRANSACTION (38.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (28.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptatibus quia ut quo."], ["content", "In sed eum. Repudiandae sint minus. Quia tempore ipsa."], ["created_at", "2023-02-03 03:24:57.982573"], ["updated_at", "2023-02-03 03:24:57.982573"]]
+  [1m[36mTRANSACTION (37.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "In illum sed et."], ["content", "Dicta saepe molestiae. Excepturi voluptates eaque. Animi optio suscipit."], ["created_at", "2023-02-03 03:24:58.062689"], ["updated_at", "2023-02-03 03:24:58.062689"]]
+  [1m[36mTRANSACTION (38.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.7ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptatum quasi ad neque."], ["content", "Iusto reprehenderit esse. Enim qui autem. Nisi est consequatur."], ["created_at", "2023-02-03 03:24:58.138868"], ["updated_at", "2023-02-03 03:24:58.138868"]]
+  [1m[36mTRANSACTION (39.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Officiis voluptas aut possimus."], ["content", "Qui sit sit. Minima placeat recusandae. Non maxime at."], ["created_at", "2023-02-03 03:24:58.214784"], ["updated_at", "2023-02-03 03:24:58.214784"]]
+  [1m[36mTRANSACTION (41.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (21.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Omnis quos ea rerum."], ["content", "Velit est omnis. Reiciendis voluptate eius. Incidunt at vero."], ["created_at", "2023-02-03 03:24:58.294808"], ["updated_at", "2023-02-03 03:24:58.294808"]]
+  [1m[36mTRANSACTION (44.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.6ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Impedit aut repudiandae dolores."], ["content", "Rerum non debitis. Et omnis quis. Ut ab sequi."], ["created_at", "2023-02-03 03:24:58.385660"], ["updated_at", "2023-02-03 03:24:58.385660"]]
+  [1m[36mTRANSACTION (38.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (29.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Omnis perferendis illum aut."], ["content", "Molestiae omnis nisi. Animi occaecati officiis. Minima quam sapiente."], ["created_at", "2023-02-03 03:24:58.466477"], ["updated_at", "2023-02-03 03:24:58.466477"]]
+  [1m[36mTRANSACTION (39.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (17.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sint adipisci vel in."], ["content", "Quas dolores et. Consequatur quidem et. Qui repellat provident."], ["created_at", "2023-02-03 03:24:58.547281"], ["updated_at", "2023-02-03 03:24:58.547281"]]
+  [1m[36mTRANSACTION (52.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (44.6ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Iure laboriosam consequatur ut."], ["content", "Voluptates voluptas reiciendis. Accusantium et optio. Voluptatibus ex officiis."], ["created_at", "2023-02-03 03:24:58.632880"], ["updated_at", "2023-02-03 03:24:58.632880"]]
+  [1m[36mTRANSACTION (67.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (35.7ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Modi quia sed et."], ["content", "Nulla optio sequi. Cumque laudantium dolorem. Odit qui aut."], ["created_at", "2023-02-03 03:24:58.763705"], ["updated_at", "2023-02-03 03:24:58.763705"]]
+  [1m[36mTRANSACTION (41.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (21.1ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Velit et rerum recusandae."], ["content", "Eum reprehenderit dolores. Aut dolore fuga. Ut nihil dolores."], ["created_at", "2023-02-03 03:24:58.856494"], ["updated_at", "2023-02-03 03:24:58.856494"]]
+  [1m[36mTRANSACTION (39.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (20.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Vel maxime commodi sit."], ["content", "Consequatur porro id. Ullam aut ut. Vel magnam eum."], ["created_at", "2023-02-03 03:24:58.928056"], ["updated_at", "2023-02-03 03:24:58.928056"]]
+  [1m[36mTRANSACTION (51.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (18.6ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Id sit quo dicta."], ["content", "Ea distinctio mollitia. Ea quibusdam voluptas. Occaecati suscipit aut."], ["created_at", "2023-02-03 03:24:59.011523"], ["updated_at", "2023-02-03 03:24:59.011523"]]
+  [1m[36mTRANSACTION (29.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (16.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Necessitatibus unde exercitationem dolor."], ["content", "Quos voluptatem aut. Accusantium voluptas tempora. Et voluptates est."], ["created_at", "2023-02-03 03:24:59.072246"], ["updated_at", "2023-02-03 03:24:59.072246"]]
+  [1m[36mTRANSACTION (27.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (16.7ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rem consectetur asperiores dicta."], ["content", "Eaque enim sit. Ea deleniti reiciendis. Autem quia adipisci."], ["created_at", "2023-02-03 03:24:59.125539"], ["updated_at", "2023-02-03 03:24:59.125539"]]
+  [1m[36mTRANSACTION (58.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (47.1ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Qui repellendus excepturi facilis."], ["content", "Fugiat corrupti voluptatibus. Et quo alias. Labore minima eligendi."], ["created_at", "2023-02-03 03:24:59.214211"], ["updated_at", "2023-02-03 03:24:59.214211"]]
+  [1m[36mTRANSACTION (62.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (19.6ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ipsum dolorum et omnis."], ["content", "Sapiente optio dolores. Sapiente quia provident. Et quia iure."], ["created_at", "2023-02-03 03:24:59.343608"], ["updated_at", "2023-02-03 03:24:59.343608"]]
+  [1m[36mTRANSACTION (30.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (17.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Eos vel consequatur eligendi."], ["content", "Corrupti ipsa et. Corrupti aut recusandae. Ipsum qui quidem."], ["created_at", "2023-02-03 03:24:59.405066"], ["updated_at", "2023-02-03 03:24:59.405066"]]
+  [1m[36mTRANSACTION (31.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (23.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptatem repellendus qui quis."], ["content", "Voluptate cum sed. Incidunt dolorem aliquid. Est omnis molestiae."], ["created_at", "2023-02-03 03:24:59.464032"], ["updated_at", "2023-02-03 03:24:59.464032"]]
+  [1m[36mTRANSACTION (33.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Magni exercitationem recusandae qui."], ["content", "Culpa ex eligendi. Quidem perspiciatis et. Esse officia repellat."], ["created_at", "2023-02-03 03:24:59.531932"], ["updated_at", "2023-02-03 03:24:59.531932"]]
+  [1m[36mTRANSACTION (45.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (19.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Nobis velit aliquid in."], ["content", "Iusto velit commodi. Commodi est illo. Quaerat commodi eos."], ["created_at", "2023-02-03 03:24:59.615130"], ["updated_at", "2023-02-03 03:24:59.615130"]]
+  [1m[36mTRANSACTION (26.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (14.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Debitis at consequuntur voluptas."], ["content", "Aliquid sed et. Quis non et. Veniam illum velit."], ["created_at", "2023-02-03 03:24:59.670571"], ["updated_at", "2023-02-03 03:24:59.670571"]]
+  [1m[36mTRANSACTION (29.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (17.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Assumenda ratione praesentium voluptas."], ["content", "Dolor voluptatem odio. Sed laborum excepturi. Est sit doloribus."], ["created_at", "2023-02-03 03:24:59.721330"], ["updated_at", "2023-02-03 03:24:59.721330"]]
+  [1m[36mTRANSACTION (31.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (22.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sed itaque vero qui."], ["content", "Odio ex beatae. Ullam quo aut. Dolorum rerum fugit."], ["created_at", "2023-02-03 03:24:59.777757"], ["updated_at", "2023-02-03 03:24:59.777757"]]
+  [1m[36mTRANSACTION (40.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Officia id similique ab."], ["content", "Eligendi autem possimus. Facere quia asperiores. Velit autem nobis."], ["created_at", "2023-02-03 03:24:59.850059"], ["updated_at", "2023-02-03 03:24:59.850059"]]
+  [1m[36mTRANSACTION (38.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.1ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Officia assumenda sit et."], ["content", "Et et temporibus. Et alias explicabo. Qui dolore necessitatibus."], ["created_at", "2023-02-03 03:24:59.926819"], ["updated_at", "2023-02-03 03:24:59.926819"]]
+  [1m[36mTRANSACTION (34.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (22.7ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Reprehenderit rerum voluptate consectetur."], ["content", "Quod sit quia. Id fuga iste. Numquam velit ullam."], ["created_at", "2023-02-03 03:25:00.003607"], ["updated_at", "2023-02-03 03:25:00.003607"]]
+  [1m[36mTRANSACTION (28.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (20.0ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Est libero nesciunt assumenda."], ["content", "Similique at labore. A non id. Aperiam sed eius."], ["created_at", "2023-02-03 03:25:00.065802"], ["updated_at", "2023-02-03 03:25:00.065802"]]
+  [1m[36mTRANSACTION (39.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (43.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Nam et culpa eaque."], ["content", "Qui autem culpa. Impedit laudantium ut. Et et repudiandae."], ["created_at", "2023-02-03 03:25:00.139426"], ["updated_at", "2023-02-03 03:25:00.139426"]]
+  [1m[36mTRANSACTION (60.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (44.0ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptatum blanditiis unde voluptate."], ["content", "Ut dignissimos non. Aliquam maxime mollitia. Et ipsum nemo."], ["created_at", "2023-02-03 03:25:00.262846"], ["updated_at", "2023-02-03 03:25:00.262846"]]
+  [1m[36mTRANSACTION (43.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (24.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Neque et dolore at."], ["content", "At suscipit illum. Aperiam consequatur aut. Excepturi accusamus saepe."], ["created_at", "2023-02-03 03:25:00.366884"], ["updated_at", "2023-02-03 03:25:00.366884"]]
+  [1m[36mTRANSACTION (39.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (26.1ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptas quos reprehenderit velit."], ["content", "Est enim sit. Dolores tempore saepe. Aut autem amet."], ["created_at", "2023-02-03 03:25:00.442031"], ["updated_at", "2023-02-03 03:25:00.442031"]]
+  [1m[36mTRANSACTION (43.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (24.7ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Cumque id aperiam laudantium."], ["content", "Temporibus sit quo. Blanditiis sed corrupti. Aut quae repellat."], ["created_at", "2023-02-03 03:25:00.523979"], ["updated_at", "2023-02-03 03:25:00.523979"]]
+  [1m[36mTRANSACTION (42.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (21.7ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Neque veniam et itaque."], ["content", "Voluptatem esse aut. Consequatur est sapiente. Impedit tenetur vel."], ["created_at", "2023-02-03 03:25:00.604204"], ["updated_at", "2023-02-03 03:25:00.604204"]]
+  [1m[36mTRANSACTION (32.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (18.9ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Nam sit pariatur officiis."], ["content", "Vero qui expedita. Vel sunt rerum. Aliquid dignissimos voluptate."], ["created_at", "2023-02-03 03:25:00.670412"], ["updated_at", "2023-02-03 03:25:00.670412"]]
+  [1m[36mTRANSACTION (34.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (24.0ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Laborum quas eius ducimus."], ["content", "Fuga quas modi. Sit officiis quia. Adipisci aliquid aspernatur."], ["created_at", "2023-02-03 03:25:00.735027"], ["updated_at", "2023-02-03 03:25:00.735027"]]
+  [1m[36mTRANSACTION (33.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (18.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Similique officia maiores omnis."], ["content", "In quia ducimus. Dolorum totam explicabo. Praesentium qui aut."], ["created_at", "2023-02-03 03:25:00.807987"], ["updated_at", "2023-02-03 03:25:00.807987"]]
+  [1m[36mTRANSACTION (38.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (22.1ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Iure quia praesentium minima."], ["content", "Officia quo tempora. Unde qui sit. Deserunt odit explicabo."], ["created_at", "2023-02-03 03:25:00.877181"], ["updated_at", "2023-02-03 03:25:00.877181"]]
+  [1m[36mTRANSACTION (56.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (47.7ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptatem asperiores vel commodi."], ["content", "Illo ipsum tenetur. Eum optio nihil. Ipsum esse et."], ["created_at", "2023-02-03 03:25:00.972153"], ["updated_at", "2023-02-03 03:25:00.972153"]]
+  [1m[36mTRANSACTION (36.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (24.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aliquid iure ullam fugit."], ["content", "Accusantium quasi ut. Debitis quasi illo. Debitis consequatur vero."], ["created_at", "2023-02-03 03:25:01.073660"], ["updated_at", "2023-02-03 03:25:01.073660"]]
+  [1m[36mTRANSACTION (34.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (16.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Pariatur velit vero ut."], ["content", "Quis earum iure. Impedit eos error. Minus accusantium laudantium."], ["created_at", "2023-02-03 03:25:01.143505"], ["updated_at", "2023-02-03 03:25:01.143505"]]
+  [1m[36mTRANSACTION (28.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (17.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Id expedita in placeat."], ["content", "In et omnis. Natus recusandae sunt. Architecto qui voluptate."], ["created_at", "2023-02-03 03:25:01.196125"], ["updated_at", "2023-02-03 03:25:01.196125"]]
+  [1m[36mTRANSACTION (42.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (24.8ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Illum voluptatem tempora ex."], ["content", "Qui officia quos. Unde voluptatibus et. Ipsam et ducimus."], ["created_at", "2023-02-03 03:25:01.263777"], ["updated_at", "2023-02-03 03:25:01.263777"]]
+  [1m[36mTRANSACTION (39.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.1ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Eius tempore cupiditate fuga."], ["content", "Modi harum aliquam. Fugit vero voluptatem. Dignissimos delectus fugit."], ["created_at", "2023-02-03 03:25:01.340765"], ["updated_at", "2023-02-03 03:25:01.340765"]]
+  [1m[36mTRANSACTION (40.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.0ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Qui nostrum molestiae laboriosam."], ["content", "Nihil dolores unde. Eum amet magni. Praesentium sunt id."], ["created_at", "2023-02-03 03:25:01.416827"], ["updated_at", "2023-02-03 03:25:01.416827"]]
+  [1m[36mTRANSACTION (39.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (25.1ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aut sint omnis at."], ["content", "Dolore qui reiciendis. Culpa dolore voluptatem. Dolor aut sunt."], ["created_at", "2023-02-03 03:25:01.492570"], ["updated_at", "2023-02-03 03:25:01.492570"]]
+  [1m[36mTRANSACTION (44.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (48.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Russell"], ["last_name", "Bernhard"], ["date_of_birth", "2022-03-06"], ["gender", "male"], ["created_at", "2023-02-03 03:25:01.775442"], ["updated_at", "2023-02-03 03:25:01.775442"]]
+  [1m[36mTRANSACTION (37.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (26.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "King"], ["last_name", "Cummings"], ["date_of_birth", "2020-10-26"], ["gender", "male"], ["created_at", "2023-02-03 03:25:01.878565"], ["updated_at", "2023-02-03 03:25:01.878565"]]
+  [1m[36mTRANSACTION (32.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (24.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ramon"], ["last_name", "Abernathy"], ["date_of_birth", "2022-10-05"], ["gender", "male"], ["created_at", "2023-02-03 03:25:01.947274"], ["updated_at", "2023-02-03 03:25:01.947274"]]
+  [1m[36mTRANSACTION (40.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (28.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Homer"], ["last_name", "Satterfield"], ["date_of_birth", "2019-05-16"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.022184"], ["updated_at", "2023-02-03 03:25:02.022184"]]
+  [1m[36mTRANSACTION (38.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (26.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Luis"], ["last_name", "Hackett"], ["date_of_birth", "2019-04-28"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.097936"], ["updated_at", "2023-02-03 03:25:02.097936"]]
+  [1m[36mTRANSACTION (42.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (22.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jamar"], ["last_name", "Gutkowski"], ["date_of_birth", "2021-05-28"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.178013"], ["updated_at", "2023-02-03 03:25:02.178013"]]
+  [1m[36mTRANSACTION (32.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (20.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Irwin"], ["last_name", "Schroeder"], ["date_of_birth", "2021-07-28"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.245066"], ["updated_at", "2023-02-03 03:25:02.245066"]]
+  [1m[36mTRANSACTION (30.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (18.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jonah"], ["last_name", "McKenzie"], ["date_of_birth", "2020-02-28"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.305575"], ["updated_at", "2023-02-03 03:25:02.305575"]]
+  [1m[36mTRANSACTION (34.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (20.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Trent"], ["last_name", "Kozey"], ["date_of_birth", "2022-11-30"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.368703"], ["updated_at", "2023-02-03 03:25:02.368703"]]
+  [1m[36mTRANSACTION (31.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (19.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Gil"], ["last_name", "Larson"], ["date_of_birth", "2020-05-04"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.429989"], ["updated_at", "2023-02-03 03:25:02.429989"]]
+  [1m[36mTRANSACTION (50.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (31.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Franklyn"], ["last_name", "Witting"], ["date_of_birth", "2022-11-07"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.512672"], ["updated_at", "2023-02-03 03:25:02.512672"]]
+  [1m[36mTRANSACTION (43.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (24.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Tommie"], ["last_name", "Reynolds"], ["date_of_birth", "2022-12-26"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.601211"], ["updated_at", "2023-02-03 03:25:02.601211"]]
+  [1m[36mTRANSACTION (39.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Carmen"], ["last_name", "Cummerata"], ["date_of_birth", "2021-09-16"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.675912"], ["updated_at", "2023-02-03 03:25:02.675912"]]
+  [1m[36mTRANSACTION (37.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Agustin"], ["last_name", "Schimmel"], ["date_of_birth", "2019-12-26"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.748204"], ["updated_at", "2023-02-03 03:25:02.748204"]]
+  [1m[36mTRANSACTION (40.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Randolph"], ["last_name", "Abshire"], ["date_of_birth", "2019-06-19"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.824446"], ["updated_at", "2023-02-03 03:25:02.824446"]]
+  [1m[36mTRANSACTION (51.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (24.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Kent"], ["last_name", "Gleason"], ["date_of_birth", "2022-04-04"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.913694"], ["updated_at", "2023-02-03 03:25:02.913694"]]
+  [1m[36mTRANSACTION (40.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (21.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Norris"], ["last_name", "Hilpert"], ["date_of_birth", "2019-08-27"], ["gender", "male"], ["created_at", "2023-02-03 03:25:02.989471"], ["updated_at", "2023-02-03 03:25:02.989471"]]
+  [1m[36mTRANSACTION (41.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (29.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Dorsey"], ["last_name", "Jacobi"], ["date_of_birth", "2022-07-01"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.065387"], ["updated_at", "2023-02-03 03:25:03.065387"]]
+  [1m[36mTRANSACTION (40.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (22.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lesley"], ["last_name", "Monahan"], ["date_of_birth", "2021-12-30"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.153359"], ["updated_at", "2023-02-03 03:25:03.153359"]]
+  [1m[36mTRANSACTION (52.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (22.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Gavin"], ["last_name", "Mertz"], ["date_of_birth", "2020-12-04"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.246454"], ["updated_at", "2023-02-03 03:25:03.246454"]]
+  [1m[36mTRANSACTION (38.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (18.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Todd"], ["last_name", "Botsford"], ["date_of_birth", "2022-07-10"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.318768"], ["updated_at", "2023-02-03 03:25:03.318768"]]
+  [1m[36mTRANSACTION (30.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (20.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Adam"], ["last_name", "Roob"], ["date_of_birth", "2020-01-09"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.375220"], ["updated_at", "2023-02-03 03:25:03.375220"]]
+  [1m[36mTRANSACTION (34.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (16.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lloyd"], ["last_name", "Kub"], ["date_of_birth", "2022-05-11"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.439184"], ["updated_at", "2023-02-03 03:25:03.439184"]]
+  [1m[36mTRANSACTION (29.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (18.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Zachary"], ["last_name", "Will"], ["date_of_birth", "2019-08-01"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.493841"], ["updated_at", "2023-02-03 03:25:03.493841"]]
+  [1m[36mTRANSACTION (59.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (27.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Odell"], ["last_name", "Legros"], ["date_of_birth", "2021-03-24"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.585168"], ["updated_at", "2023-02-03 03:25:03.585168"]]
+  [1m[36mTRANSACTION (33.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (21.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Mac"], ["last_name", "Kulas"], ["date_of_birth", "2020-07-28"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.661192"], ["updated_at", "2023-02-03 03:25:03.661192"]]
+  [1m[36mTRANSACTION (34.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (20.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Hobert"], ["last_name", "Wiza"], ["date_of_birth", "2020-07-23"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.725433"], ["updated_at", "2023-02-03 03:25:03.725433"]]
+  [1m[36mTRANSACTION (37.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (26.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Dale"], ["last_name", "VonRueden"], ["date_of_birth", "2020-05-05"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.792456"], ["updated_at", "2023-02-03 03:25:03.792456"]]
+  [1m[36mTRANSACTION (44.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Gerald"], ["last_name", "Schulist"], ["date_of_birth", "2019-09-16"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.872644"], ["updated_at", "2023-02-03 03:25:03.872644"]]
+  [1m[36mTRANSACTION (40.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Roscoe"], ["last_name", "Sauer"], ["date_of_birth", "2021-09-06"], ["gender", "male"], ["created_at", "2023-02-03 03:25:03.948875"], ["updated_at", "2023-02-03 03:25:03.948875"]]
+  [1m[36mTRANSACTION (39.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Andreas"], ["last_name", "Yundt"], ["date_of_birth", "2021-04-17"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.025631"], ["updated_at", "2023-02-03 03:25:04.025631"]]
+  [1m[36mTRANSACTION (36.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (23.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Olin"], ["last_name", "Rosenbaum"], ["date_of_birth", "2019-10-19"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.099496"], ["updated_at", "2023-02-03 03:25:04.099496"]]
+  [1m[36mTRANSACTION (39.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (29.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Shelton"], ["last_name", "Kulas"], ["date_of_birth", "2019-09-13"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.183175"], ["updated_at", "2023-02-03 03:25:04.183175"]]
+  [1m[36mTRANSACTION (34.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (18.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Kory"], ["last_name", "Prosacco"], ["date_of_birth", "2020-04-13"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.258212"], ["updated_at", "2023-02-03 03:25:04.258212"]]
+  [1m[36mTRANSACTION (40.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (19.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Geraldo"], ["last_name", "Bechtelar"], ["date_of_birth", "2022-08-06"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.326418"], ["updated_at", "2023-02-03 03:25:04.326418"]]
+  [1m[36mTRANSACTION (68.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (47.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Conrad"], ["last_name", "Bartell"], ["date_of_birth", "2021-11-01"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.427689"], ["updated_at", "2023-02-03 03:25:04.427689"]]
+  [1m[36mTRANSACTION (55.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (20.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lucien"], ["last_name", "Gutmann"], ["date_of_birth", "2020-10-14"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.549201"], ["updated_at", "2023-02-03 03:25:04.549201"]]
+  [1m[36mTRANSACTION (32.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (19.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Eduardo"], ["last_name", "Feil"], ["date_of_birth", "2021-08-03"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.610042"], ["updated_at", "2023-02-03 03:25:04.610042"]]
+  [1m[36mTRANSACTION (30.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (18.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Trinidad"], ["last_name", "Emard"], ["date_of_birth", "2022-05-28"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.669455"], ["updated_at", "2023-02-03 03:25:04.669455"]]
+  [1m[36mTRANSACTION (33.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lawerence"], ["last_name", "Legros"], ["date_of_birth", "2020-08-20"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.728328"], ["updated_at", "2023-02-03 03:25:04.728328"]]
+  [1m[36mTRANSACTION (46.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Alfred"], ["last_name", "Streich"], ["date_of_birth", "2022-12-11"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.810750"], ["updated_at", "2023-02-03 03:25:04.810750"]]
+  [1m[36mTRANSACTION (40.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lyndon"], ["last_name", "Yost"], ["date_of_birth", "2020-03-08"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.887114"], ["updated_at", "2023-02-03 03:25:04.887114"]]
+  [1m[36mTRANSACTION (49.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Toney"], ["last_name", "Pagac"], ["date_of_birth", "2019-11-10"], ["gender", "male"], ["created_at", "2023-02-03 03:25:04.971399"], ["updated_at", "2023-02-03 03:25:04.971399"]]
+  [1m[36mTRANSACTION (48.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Leopoldo"], ["last_name", "Hackett"], ["date_of_birth", "2019-07-12"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.056150"], ["updated_at", "2023-02-03 03:25:05.056150"]]
+  [1m[36mTRANSACTION (40.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Brant"], ["last_name", "Mohr"], ["date_of_birth", "2022-07-15"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.133154"], ["updated_at", "2023-02-03 03:25:05.133154"]]
+  [1m[36mTRANSACTION (35.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (27.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Woodrow"], ["last_name", "Rath"], ["date_of_birth", "2020-03-30"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.204521"], ["updated_at", "2023-02-03 03:25:05.204521"]]
+  [1m[36mTRANSACTION (35.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (24.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Buddy"], ["last_name", "Wolff"], ["date_of_birth", "2019-11-29"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.277351"], ["updated_at", "2023-02-03 03:25:05.277351"]]
+  [1m[36mTRANSACTION (40.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (22.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Elbert"], ["last_name", "Bashirian"], ["date_of_birth", "2020-12-26"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.354787"], ["updated_at", "2023-02-03 03:25:05.354787"]]
+  [1m[36mTRANSACTION (32.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (22.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Columbus"], ["last_name", "Erdman"], ["date_of_birth", "2021-05-26"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.421219"], ["updated_at", "2023-02-03 03:25:05.421219"]]
+  [1m[36mTRANSACTION (29.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (18.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lon"], ["last_name", "Stracke"], ["date_of_birth", "2021-01-17"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.482196"], ["updated_at", "2023-02-03 03:25:05.482196"]]
+  [1m[36mTRANSACTION (32.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (18.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Emile"], ["last_name", "Strosin"], ["date_of_birth", "2022-03-19"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.543407"], ["updated_at", "2023-02-03 03:25:05.543407"]]
+  [1m[36mTRANSACTION (30.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (16.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Wayne"], ["last_name", "Waters"], ["date_of_birth", "2021-02-26"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.602604"], ["updated_at", "2023-02-03 03:25:05.602604"]]
+  [1m[36mTRANSACTION (34.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (16.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "King"], ["last_name", "Gerhold"], ["date_of_birth", "2022-05-05"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.662497"], ["updated_at", "2023-02-03 03:25:05.662497"]]
+  [1m[36mTRANSACTION (33.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (18.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ned"], ["last_name", "Harber"], ["date_of_birth", "2021-03-24"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.721126"], ["updated_at", "2023-02-03 03:25:05.721126"]]
+  [1m[36mTRANSACTION (33.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (16.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Hershel"], ["last_name", "Walker"], ["date_of_birth", "2020-06-14"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.782281"], ["updated_at", "2023-02-03 03:25:05.782281"]]
+  [1m[36mTRANSACTION (54.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (50.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Hayden"], ["last_name", "Will"], ["date_of_birth", "2021-03-14"], ["gender", "male"], ["created_at", "2023-02-03 03:25:05.864785"], ["updated_at", "2023-02-03 03:25:05.864785"]]
+  [1m[36mTRANSACTION (66.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (21.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lou"], ["last_name", "Rowe"], ["date_of_birth", "2022-07-11"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.005004"], ["updated_at", "2023-02-03 03:25:06.005004"]]
+  [1m[36mTRANSACTION (31.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (17.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sebastian"], ["last_name", "Johns"], ["date_of_birth", "2020-09-10"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.071816"], ["updated_at", "2023-02-03 03:25:06.071816"]]
+  [1m[36mTRANSACTION (31.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (19.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Mario"], ["last_name", "Shanahan"], ["date_of_birth", "2021-05-21"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.130870"], ["updated_at", "2023-02-03 03:25:06.130870"]]
+  [1m[36mTRANSACTION (58.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (26.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Cleveland"], ["last_name", "Hand"], ["date_of_birth", "2020-03-29"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.217212"], ["updated_at", "2023-02-03 03:25:06.217212"]]
+  [1m[36mTRANSACTION (47.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (20.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Mitchell"], ["last_name", "Cruickshank"], ["date_of_birth", "2020-08-17"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.303601"], ["updated_at", "2023-02-03 03:25:06.303601"]]
+  [1m[36mTRANSACTION (36.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (19.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jeremy"], ["last_name", "Mitchell"], ["date_of_birth", "2019-07-07"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.370923"], ["updated_at", "2023-02-03 03:25:06.370923"]]
+  [1m[36mTRANSACTION (35.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (26.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sandy"], ["last_name", "Hills"], ["date_of_birth", "2022-06-29"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.438032"], ["updated_at", "2023-02-03 03:25:06.438032"]]
+  [1m[36mTRANSACTION (37.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (22.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Kristopher"], ["last_name", "Brakus"], ["date_of_birth", "2021-06-30"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.522119"], ["updated_at", "2023-02-03 03:25:06.522119"]]
+  [1m[36mTRANSACTION (36.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (20.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Issac"], ["last_name", "Feil"], ["date_of_birth", "2020-03-27"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.593910"], ["updated_at", "2023-02-03 03:25:06.593910"]]
+  [1m[36mTRANSACTION (31.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (17.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Genaro"], ["last_name", "Hilpert"], ["date_of_birth", "2020-09-10"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.656800"], ["updated_at", "2023-02-03 03:25:06.656800"]]
+  [1m[36mTRANSACTION (40.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Dudley"], ["last_name", "Heller"], ["date_of_birth", "2022-10-30"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.726068"], ["updated_at", "2023-02-03 03:25:06.726068"]]
+  [1m[36mTRANSACTION (30.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (19.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Olen"], ["last_name", "Adams"], ["date_of_birth", "2019-06-24"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.796847"], ["updated_at", "2023-02-03 03:25:06.796847"]]
+  [1m[36mTRANSACTION (39.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (22.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Harley"], ["last_name", "Hoppe"], ["date_of_birth", "2019-11-20"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.868094"], ["updated_at", "2023-02-03 03:25:06.868094"]]
+  [1m[36mTRANSACTION (33.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (21.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Edgar"], ["last_name", "Abshire"], ["date_of_birth", "2022-08-24"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.932340"], ["updated_at", "2023-02-03 03:25:06.932340"]]
+  [1m[36mTRANSACTION (35.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (21.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "August"], ["last_name", "Schuster"], ["date_of_birth", "2021-11-13"], ["gender", "male"], ["created_at", "2023-02-03 03:25:06.998584"], ["updated_at", "2023-02-03 03:25:06.998584"]]
+  [1m[36mTRANSACTION (46.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Coleman"], ["last_name", "Bernhard"], ["date_of_birth", "2021-07-04"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.077498"], ["updated_at", "2023-02-03 03:25:07.077498"]]
+  [1m[36mTRANSACTION (40.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (26.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Nickolas"], ["last_name", "Durgan"], ["date_of_birth", "2022-04-10"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.152924"], ["updated_at", "2023-02-03 03:25:07.152924"]]
+  [1m[36mTRANSACTION (39.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Carey"], ["last_name", "Ferry"], ["date_of_birth", "2020-02-05"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.230522"], ["updated_at", "2023-02-03 03:25:07.230522"]]
+  [1m[36mTRANSACTION (38.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Aubrey"], ["last_name", "Casper"], ["date_of_birth", "2020-01-26"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.304278"], ["updated_at", "2023-02-03 03:25:07.304278"]]
+  [1m[36mTRANSACTION (40.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (22.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Monroe"], ["last_name", "Parisian"], ["date_of_birth", "2019-10-05"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.382848"], ["updated_at", "2023-02-03 03:25:07.382848"]]
+  [1m[36mTRANSACTION (35.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (24.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Donnie"], ["last_name", "Leffler"], ["date_of_birth", "2021-03-25"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.451881"], ["updated_at", "2023-02-03 03:25:07.451881"]]
+  [1m[36mTRANSACTION (41.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (24.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Wilbur"], ["last_name", "Kautzer"], ["date_of_birth", "2022-11-04"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.529983"], ["updated_at", "2023-02-03 03:25:07.529983"]]
+  [1m[36mTRANSACTION (31.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (19.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jerrell"], ["last_name", "Parisian"], ["date_of_birth", "2021-09-15"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.596770"], ["updated_at", "2023-02-03 03:25:07.596770"]]
+  [1m[36mTRANSACTION (29.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (18.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Walker"], ["last_name", "Keeling"], ["date_of_birth", "2019-07-19"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.653589"], ["updated_at", "2023-02-03 03:25:07.653589"]]
+  [1m[36mTRANSACTION (29.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (20.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Riley"], ["last_name", "Rosenbaum"], ["date_of_birth", "2019-07-21"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.710288"], ["updated_at", "2023-02-03 03:25:07.710288"]]
+  [1m[36mTRANSACTION (42.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Hilton"], ["last_name", "Roberts"], ["date_of_birth", "2021-09-23"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.782233"], ["updated_at", "2023-02-03 03:25:07.782233"]]
+  [1m[36mTRANSACTION (38.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (26.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Darryl"], ["last_name", "Huel"], ["date_of_birth", "2020-12-21"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.856425"], ["updated_at", "2023-02-03 03:25:07.856425"]]
+  [1m[36mTRANSACTION (34.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (21.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Bryant"], ["last_name", "Jacobs"], ["date_of_birth", "2021-04-15"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.928052"], ["updated_at", "2023-02-03 03:25:07.928052"]]
+  [1m[36mTRANSACTION (31.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (17.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Trey"], ["last_name", "Borer"], ["date_of_birth", "2019-09-11"], ["gender", "male"], ["created_at", "2023-02-03 03:25:07.991914"], ["updated_at", "2023-02-03 03:25:07.991914"]]
+  [1m[36mTRANSACTION (31.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Glenn"], ["last_name", "Fay"], ["date_of_birth", "2020-06-21"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.049731"], ["updated_at", "2023-02-03 03:25:08.049731"]]
+  [1m[36mTRANSACTION (42.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (19.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Rodney"], ["last_name", "Rolfson"], ["date_of_birth", "2020-10-08"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.128669"], ["updated_at", "2023-02-03 03:25:08.128669"]]
+  [1m[36mTRANSACTION (39.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (24.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Joaquin"], ["last_name", "Dickens"], ["date_of_birth", "2021-03-03"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.198792"], ["updated_at", "2023-02-03 03:25:08.198792"]]
+  [1m[36mTRANSACTION (38.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Cruz"], ["last_name", "Ratke"], ["date_of_birth", "2021-08-04"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.273924"], ["updated_at", "2023-02-03 03:25:08.273924"]]
+  [1m[36mTRANSACTION (39.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (24.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lawrence"], ["last_name", "Johns"], ["date_of_birth", "2019-07-23"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.350835"], ["updated_at", "2023-02-03 03:25:08.350835"]]
+  [1m[36mTRANSACTION (40.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (28.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Laverne"], ["last_name", "Kunde"], ["date_of_birth", "2020-02-03"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.427091"], ["updated_at", "2023-02-03 03:25:08.427091"]]
+  [1m[36mTRANSACTION (36.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Dana"], ["last_name", "Marks"], ["date_of_birth", "2019-04-16"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.504592"], ["updated_at", "2023-02-03 03:25:08.504592"]]
+  [1m[36mTRANSACTION (35.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (24.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Mauricio"], ["last_name", "Flatley"], ["date_of_birth", "2022-04-23"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.576725"], ["updated_at", "2023-02-03 03:25:08.576725"]]
+  [1m[36mTRANSACTION (33.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (24.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Irwin"], ["last_name", "Barton"], ["date_of_birth", "2022-02-22"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.645529"], ["updated_at", "2023-02-03 03:25:08.645529"]]
+  [1m[36mTRANSACTION (31.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (21.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Tyree"], ["last_name", "Purdy"], ["date_of_birth", "2019-08-23"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.711998"], ["updated_at", "2023-02-03 03:25:08.711998"]]
+  [1m[36mTRANSACTION (36.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (19.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Miquel"], ["last_name", "Sipes"], ["date_of_birth", "2020-10-21"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.782688"], ["updated_at", "2023-02-03 03:25:08.782688"]]
+  [1m[36mTRANSACTION (30.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (23.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Noah"], ["last_name", "Hane"], ["date_of_birth", "2022-04-05"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.843080"], ["updated_at", "2023-02-03 03:25:08.843080"]]
+  [1m[36mTRANSACTION (39.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (25.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Nicolas"], ["last_name", "Macejkovic"], ["date_of_birth", "2022-10-04"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.916491"], ["updated_at", "2023-02-03 03:25:08.916491"]]
+  [1m[36mTRANSACTION (37.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (23.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Wally"], ["last_name", "Fritsch"], ["date_of_birth", "2019-10-28"], ["gender", "male"], ["created_at", "2023-02-03 03:25:08.990512"], ["updated_at", "2023-02-03 03:25:08.990512"]]
+  [1m[36mTRANSACTION (34.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (20.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Clement"], ["last_name", "Hirthe"], ["date_of_birth", "2020-12-21"], ["gender", "male"], ["created_at", "2023-02-03 03:25:09.059688"], ["updated_at", "2023-02-03 03:25:09.059688"]]
+  [1m[36mTRANSACTION (37.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (22.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "date_of_birth", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ethan"], ["last_name", "Kassulke"], ["date_of_birth", "2022-10-17"], ["gender", "male"], ["created_at", "2023-02-03 03:25:09.125048"], ["updated_at", "2023-02-03 03:25:09.125048"]]
+  [1m[36mTRANSACTION (65.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2023-02-02 19:31:11 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (11.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 140.8ms | Allocations: 391)
+  Rendered shared/_nav.html.erb (Duration: 185.7ms | Allocations: 2152)
+  Rendered layout layouts/application.html.erb (Duration: 10102.9ms | Allocations: 113292)
+Completed 200 OK in 11362ms (Views: 10376.2ms | ActiveRecord: 0.0ms | Allocations: 117514)
+
+
+Started GET "/news/search?query=john&commit=Search" for 127.0.0.1 at 2023-02-02 19:31:38 -0800
+Processing by News::SearchController#search_feed as HTML
+  Parameters: {"query"=>"john", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/search/search_feed.html.erb within layouts/application
+  [1m[36mIssue Load (12.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE (lower(content) LIKE '%john%' OR lower(title) LIKE '%john%')[0m
+  ↳ app/views/news/search/search_feed.html.erb:3
+  [1m[36mUser Load (13.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (lower(first_name) LIKE '%john%' OR lower(last_name) LIKE '%john%' OR lower(date_of_birth) LIKE '%john%' OR lower(gender) LIKE '%john%')[0m
+  ↳ app/views/news/search/search_feed.html.erb:7
+  Rendered news/search/search_feed.html.erb within layouts/application (Duration: 157.3ms | Allocations: 6636)
+  Rendered shared/_nav.html.erb (Duration: 1.8ms | Allocations: 1321)
+  Rendered layout layouts/application.html.erb (Duration: 518.3ms | Allocations: 11367)
+Completed 200 OK in 887ms (Views: 448.4ms | ActiveRecord: 82.7ms | Allocations: 13666)
+
+
+Started GET "/news/search?query=lorem&commit=Search" for 127.0.0.1 at 2023-02-02 19:31:58 -0800
+Processing by News::SearchController#search_feed as HTML
+  Parameters: {"query"=>"lorem", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/search/search_feed.html.erb within layouts/application
+  [1m[36mIssue Load (8.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE (lower(content) LIKE '%lorem%' OR lower(title) LIKE '%lorem%')[0m
+  ↳ app/views/news/search/search_feed.html.erb:3
+  [1m[36mUser Load (14.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (lower(first_name) LIKE '%lorem%' OR lower(last_name) LIKE '%lorem%' OR lower(date_of_birth) LIKE '%lorem%' OR lower(gender) LIKE '%lorem%')[0m
+  ↳ app/views/news/search/search_feed.html.erb:7
+  Rendered news/search/search_feed.html.erb within layouts/application (Duration: 105.7ms | Allocations: 3834)
+  Rendered shared/_nav.html.erb (Duration: 1.8ms | Allocations: 1291)
+  Rendered layout layouts/application.html.erb (Duration: 480.5ms | Allocations: 8223)
+Completed 200 OK in 618ms (Views: 418.9ms | ActiveRecord: 67.9ms | Allocations: 8670)
+
+
+Started GET "/news/search?query=i&commit=Search" for 127.0.0.1 at 2023-02-02 19:32:10 -0800
+Processing by News::SearchController#search_feed as HTML
+  Parameters: {"query"=>"i", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/search/search_feed.html.erb within layouts/application
+  [1m[36mIssue Load (7.8ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE (lower(content) LIKE '%i%' OR lower(title) LIKE '%i%')[0m
+  ↳ app/views/news/search/search_feed.html.erb:3
+  [1m[36mUser Load (12.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (lower(first_name) LIKE '%i%' OR lower(last_name) LIKE '%i%' OR lower(date_of_birth) LIKE '%i%' OR lower(gender) LIKE '%i%')[0m
+  ↳ app/views/news/search/search_feed.html.erb:7
+  Rendered news/search/search_feed.html.erb within layouts/application (Duration: 37.7ms | Allocations: 5554)
+  Rendered shared/_nav.html.erb (Duration: 0.9ms | Allocations: 1290)
+  Rendered layout layouts/application.html.erb (Duration: 406.4ms | Allocations: 9946)
+Completed 200 OK in 554ms (Views: 389.7ms | ActiveRecord: 20.3ms | Allocations: 10332)
+
+
